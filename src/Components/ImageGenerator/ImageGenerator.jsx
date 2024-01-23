@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import './ImageGenerator.css'
 import default_image from '../Assets/default_image.jpg'
 
-const OPENAI_API_KEY = process.env.REACT_APP_API_KEY;
+// const OPENAI_API_KEY = process.env.REACT_APP_API_KEY;
 
 const ImageGenerator = () => {
 
@@ -28,7 +28,8 @@ const ImageGenerator = () => {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": `Bearer ${process.env.REACT_APP_API_KEY}`,
+                    //"Authorization": `Bearer ${process.env.REACT_APP_API_KEY}`,
+                    "Authorization": `Bearer ${secrets.API_KEY}`,
                 },
                 body: JSON.stringify({
                     prompt: `${combinedPrefix} ${inputRef.current.value}`,
