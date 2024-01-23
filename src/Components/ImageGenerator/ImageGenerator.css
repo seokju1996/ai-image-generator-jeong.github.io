@@ -1,0 +1,140 @@
+.ai-image-generator{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    gap: 30px;
+    user-select: none;
+    font-family:'Comfortaa','Courier New', Courier, monospace;
+}
+
+.header{
+    font-size: 45px;
+    font-weight: 500;
+    padding-bottom: 1px;
+    margin-bottom: 30px;
+}
+s
+
+.img-loading{
+    display: flex;
+    flex-direction: column;;
+}
+
+.img-loading img{
+    width: 800px;
+}
+
+
+.search-box{
+    display: flex;
+    width: 1000px;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background: #1f3540;
+    margin-bottom: 70px;
+}
+
+.search-input{
+    width: 600px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    padding-left: 35px;
+    margin-right: 35px;
+}
+
+.search-input::placeholder{
+    color: #999;
+}
+
+.generate-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 50px;
+    background: cornflowerblue;
+    cursor: pointer;
+}
+
+.generate-btn:hover {
+    background-color: #98b9ff;
+}
+
+
+.loading-bar{
+    width: 0px;
+    height: 8px;
+    background: cornflowerblue;
+}
+
+.loading-text{
+    font-size: 18px;
+}
+
+.loading-bar-full{
+    width: 512px;
+    height: 8px;
+    background: cornflowerblue;
+    transition: 15s;
+}
+
+.display-none{
+    display: none;
+}
+
+.download-btn{
+    margin-top: -30px;
+    margin-left: 680px;
+    font-family:'Comfortaa','Courier New', Courier, monospace;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+}
+
+.filter-btn {
+    display: flex;
+    gap: 30px;
+    margin-right: 100px;
+}
+
+.filter-btn button {
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top : -50px;
+    margin-bottom: 10px;
+    font-family:'Comfortaa','Courier New', Courier, monospace;
+}
+
+.filter-btn button.selected {
+    background-color: #3498db;
+    color: white;
+}
+
+.filter-btn button:hover {
+    background-color: #ccc;
+}
+
