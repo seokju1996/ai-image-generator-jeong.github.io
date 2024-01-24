@@ -4,22 +4,23 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
-  your-job-name:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Use API Key
-        run: echo "REACT_APP_API_KEY=${{ secrets.API_KEY }}" >> $GITHUB_ENV
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
 
-      - name: Run your script
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Deploy
         run: |
-          npm install
-          npm run build
+          REACT_APP_API_KEY=${{ secrets.API_KEY }} npm run build
