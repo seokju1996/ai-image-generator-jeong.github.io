@@ -15,9 +15,9 @@ jobs:
       matrix:
         node-version: [18.x]
 
-steps:
-  - name: Sample Azure action
-    with: # Set Azure credentials secret as an input
-      API_TOKEN:  ${{ secrets.API_TOKEN }}
-    env: # Or as an environment variable
-      API_TOKEN:  ${{ secrets.API_TOKEN }}
+    steps:
+  - name: Set API_KEY
+    with:
+      credentials: ${{ secrets.AZURE_CREDENTIALS }}
+    env: 
+      credentials: ${{ secrets.AZURE_CREDENTIALS }}
