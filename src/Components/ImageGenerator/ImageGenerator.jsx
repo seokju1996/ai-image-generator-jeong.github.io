@@ -28,8 +28,7 @@ const ImageGenerator = () => {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    //"Authorization": `Bearer ${process.env.REACT_APP_API_KEY}`,
-                    "Authorization": `Bearer ${process.env.API_KEY}`,
+                    "Authorization": `Bearer ${process.env.REACT_APP_API_KEY}`,
                 },
                 body: JSON.stringify({
                     prompt: `${combinedPrefix} ${inputRef.current.value}`,

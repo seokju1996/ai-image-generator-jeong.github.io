@@ -21,5 +21,5 @@ jobs:
 
       - name: Run your script
         run: |
-          # Your script or command that uses the API key
-          echo "Using API key: $API_KEY"
+          npm install
+          npm run build
