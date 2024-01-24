@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import './ImageGenerator.css'
 import default_image from '../Assets/default_image.jpg'
 
-// const OPENAI_API_KEY = process.env.REACT_APP_API_KEY;
+const OPENAI_API_KEY = process.env.REACT_APP_API_KEY;
 
 const ImageGenerator = () => {
 
