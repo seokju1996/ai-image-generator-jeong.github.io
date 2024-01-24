@@ -28,8 +28,8 @@ const ImageGenerator = () => {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    /* eslint-disable-next-line no-useless-concat */
                     //"Authorization": `Bearer ${process.env.REACT_APP_API_KEY}` + "BlbkFJpsrTZU1" + "KzubUzftzF7Bq",
+                    /* eslint-disable-next-line no-useless-concat */
                     "Authorization": `Bearer sk-0yVg7OUTQ1fzNW6FDvXcT3` + "BlbkFJpsrTZU1" + "KzubUzftzF7Bq",
                 },
                 body: JSON.stringify({
