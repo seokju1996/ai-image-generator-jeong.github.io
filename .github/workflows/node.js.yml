@@ -1,23 +1,25 @@
-name: CI/CD
+name: Your Workflow Name
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
-  build:
-
+  your-job-name:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
-  - name: Set API_KEY
-    with:
-      credentials: ${{ secrets.AZURE_CREDENTIALS }}
-    env: 
-      credentials: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Use API Key
+        run: echo "API_KEY=${{ secrets.API_KEY }}" >> $GITHUB_ENV
+
+      - name: Run your script
+        run: |
+          # Your script or command that uses the API key
+          echo "Using API key: $API_KEY"
