@@ -1,18 +1,40 @@
-# Getting Started with Create React App
+# AI Image Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an AI Image Generator that uses the OpenAI API to generate images based on user input. It includes both a frontend built with React and a backend built with Express.js and MongoDB. Users can input a description, select a filter, generate an image, and view recent searches.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Generate images based on user input using OpenAI API.
+- Save generated images and their descriptions to MongoDB.
+- Display the 5 most recent searches.
+- Download generated images.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
+- React
+- CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Backend
+- Node.js
+- Express.js
+- MongoDB
 
-# API Key
-In your root folder, create .env file and add your open-ai API Key
+## Setup
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+- MongoDB (local or Atlas)
+
+### Installation
+
+# For frontend
+npm install
+
+# For backend
+cd backend
+npm install
+
+Create a .env file in both directories and add your OpenAI API key and MongoDB connection string:
