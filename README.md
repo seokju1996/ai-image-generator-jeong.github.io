@@ -30,11 +30,11 @@ This project is an AI Image Generator that uses the OpenAI API to generate image
 
 ### Installation
 
-# For frontend
-npm install
+For frontend
+`npm install`
 
-# For backend
-cd backend
-npm install
+For backend
+``cd backend
+npm install``
 
 Create a .env file in both directories and add your OpenAI API key and MongoDB connection string:
